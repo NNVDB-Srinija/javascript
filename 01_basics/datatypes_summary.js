@@ -39,3 +39,32 @@ console.log(typeof outsidetemp) // It prints object because:- typeof null is obj
 
 console.log(typeof myFunction) 
 console.log(typeof heros) //It prints object because normally arrays are of type object
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//Stack (Primitive), Heap(non-Primitive)
+
+//Primitive values go in Stack  (get a copy)
+//non Primitive values go in Heap  (get a reference)
+
+let myName="Srinija"
+
+let anotherName=myName
+
+console.log(anotherName);
+anotherName="baby"
+console.log(myName);
+console.log(anotherName);
+
+let user={
+    email:"user@google.com",
+    upi:"user@axl"
+}
+
+let userTwo=user
+
+userTwo.email="usertwo@google.com"
+
+console.log(user.email)
+console.log(userTwo.email);
