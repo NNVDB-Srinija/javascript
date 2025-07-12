@@ -51,3 +51,24 @@ console.log(Object.values(tinderUser));
 console.log(Object.entries(tinderUser));
 
 console.log(tinderUser.hasOwnProperty('isLogged'))
+
+
+//De-structuring
+
+const course={
+    coursename:"js",
+    price:"999",
+    courseIns:"hitesh"
+}
+
+//course.courseIns
+const{courseIns}=course
+const{courseIns:ins}=course
+console.log(ins);
+
+//Curly brackets means de-structuring property
+
+//APIs
+//apis can be in the format of arrays
+
+//use json formatter to format the api
